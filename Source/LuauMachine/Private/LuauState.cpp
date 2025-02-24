@@ -9,7 +9,7 @@
 #include "LuauBlueprintFunctionLibrary.h"
 #include "ThirdParty/LuauLibrary/Compiler/include/Luau/Compiler.h"
 #include "ThirdParty/LuauLibrary/Compiler/include/Luau/BytecodeBuilder.h"
-#include "ThirdParty/LuauLibrary/AST/include/Luau/StringUtils.h"
+#include "ThirdParty/LuauLibrary/Ast/include/Luau/StringUtils.h"
 #include "ThirdParty/LuauLibrary/VM/src/lstate.h"
 #include "ThirdParty/LuauLibrary/VM/src/ldebug.h"
 #include "ThirdParty/LuauLibrary/VM/src/lobject.h"
@@ -2724,5 +2724,5 @@ FLuauValue ULuauState::RunString(const FString & CodeString, FString CodePath)
 
 void ULuauState::Error(const FString& ErrorString)
 {
-	luaL_error(L, TCHAR_TO_UTF8(*ErrorString));
+	luaL_error(L, "%s", TCHAR_TO_UTF8(*ErrorString));
 }

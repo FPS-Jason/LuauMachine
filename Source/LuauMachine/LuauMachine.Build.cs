@@ -25,7 +25,7 @@ public class LuauMachine : ModuleRules
 				Path.Combine(ModuleDirectory, "../ThirdParty/LuauLibrary/VM/include"),
 				Path.Combine(ModuleDirectory, "../ThirdParty/LuauLibrary/Common/include"),
 				Path.Combine(ModuleDirectory, "../ThirdParty/LuauLibrary/Compiler/include"),
-				Path.Combine(ModuleDirectory, "../ThirdParty/LuauLibrary/AST/include"),
+				Path.Combine(ModuleDirectory, "../ThirdParty/LuauLibrary/Ast/include"),
 				Path.Combine(ModuleDirectory, "../ThirdParty/LuauLibrary/VM/src"),
 			}
             );
